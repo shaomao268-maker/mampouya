@@ -1,199 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>font-end</title>
+    <title>Nos Offres & Tarifs</title>
     <link rel="stylesheet" href="assiets/css/bootstrap.css">
     
     <style>
-      footer img{
-    height: 100px;
-    width: 100px;
-    margin-top: 30px;
-}
-footer{
-    background-color: rgb(141, 168, 159);
-    margin-top: 100px;
-}
-main{
-    margin-top: 50pxs;
-}
+        :root {
+            --main-green: #6c8e83;
+        }
 
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #ffffff !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        .footer-img {
+            height: 80px;
+            width: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: var(--main-green);
+            color: white;
+            padding: 60px 0 30px 0;
+            margin-top: 80px;
+        }
+
+        footer h5 {
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .footer-link {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .footer-link:hover { color: white; padding-left: 5px; }
+
+        /* Style spécifique aux cartes */
+        .card-custom {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body>
       
-<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-success" href="#">MAISON GOURMANDE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">MAISON</a>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="a-propos.html">A-propos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-disabled="true " href="page.html">Galerie</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="a-propos.html">A-propos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="page.html">Galerie</a></li>
       </ul>
-      <form class="d-flex" role="rechercher">
-        <input class="form-control me-2" type="rechercher" placeholder="rechercher" aria-label="rechercher"/>
-        <button class="btn btn-outline-success" type="submit">rechercher</button>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Rechercher...">
+        <button class="btn btn-outline-success" type="submit">Go</button>
       </form>
     </div>
   </div>
 </nav>
 
-
-<header>
+<header class="mb-5">
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assiets/image/oo.jpg" class="d-block w-100 imag-fluid" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assiets/image/pp.jpg" class="d-block w-100 imag-fluid" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assiets/image/im10 (1).jpg" class="d-block w-100 imag-fluid" alt="...">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assiets/image/oo.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assiets/image/pp.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assiets/image/im10 (1).jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" alt="...">
+      </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 </header>
-<main class="d-flex justify-content-center  ">
 
-<div class="card" style="width: 18rem;">
-  <img src="assiets/image/image2 .jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">GoDady</h5>
-    <p class="card-text">nos melisurs offres</p>
-    <a href="#" class="btn btn-primary">pour vous</a>
-  </div>
-</div>
+<main class="container">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Nos Formules Exclusivement Pour Vous</h2>
+        <p class="text-muted">Découvrez nos tarifs privilèges et nos sélections de saison.</p>
+    </div>
 
+    <div class="row justify-content-center g-4">
+        <div class="col-md-5 col-lg-4">
+            <div class="card card-custom h-100">
+              <img src="assiets/image/image2 .jpg" class="card-img-top" alt="Offre Spéciale">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold text-success">Le Choix GoDady</h5>
+                <p class="card-text">Profitez de nos meilleures offres gastronomiques, sélectionnées par nos experts pour ravir vos papilles.</p>
+                <a href="#" class="btn btn-success w-100">Découvrir l'offre</a>
+              </div>
+            </div>
+        </div>
 
-
-
-
-
-<div class="card" style="width: 18rem;">
-  <div class="card-header">
-  PRIX
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">100 889$</li>
-    <li class="list-group-item">200 722$</li>
-    <li class="list-group-item">188 987$</li>
-  </ul>
-</div>
-
-
-
-
-
-
-
-
-
+        <div class="col-md-5 col-lg-4">
+            <div class="card card-custom h-100">
+              <div class="card-header bg-success text-white fw-bold text-center">
+                NOS TARIFS PRIVILÈGES
+              </div>
+              <ul class="list-group list-group-flush h-100">
+                <li class="list-group-item d-flex justify-content-between align-items-center p-4">
+                    Formule Prestige <span class="badge bg-dark rounded-pill">100 889$</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center p-4">
+                    Menu Dégustation <span class="badge bg-dark rounded-pill">200 722$</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center p-4">
+                    Expérience Royale <span class="badge bg-dark rounded-pill">188 987$</span>
+                </li>
+              </ul>
+              <div class="card-footer text-center bg-white border-0 pb-4">
+                  <small class="text-muted">* Tarifs incluant le service et les boissons</small>
+              </div>
+            </div>
+        </div>
+    </div>
 </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="d-flex justify-content-center">
-
-
-<div class="col-md-3">
-  <img src="assiets/image/im8.jpg" alt="" class="img-fluid">
-  <h1>NOS partenaires</h1>
-  <ul>
-    <li>La Table Royale</li>
-    <li>Au Fin Gourmet</li>
-    <li>Elysion</li>
-    <li>La Grande Cuisine</li>
-    <li>LE kactus</li>
-  </ul>
-</div>
-<div class="col-md-3">
-  <img src="assiets/image/im6.jpg" alt="">
-  <h1>
-    NOS OFFRETS
-  </h1>
-  <ul>
-    <li>20% de reduction pour La Grande Cuisine </li>
-    <li>15% de reduction pour La Table Royale </li>
-    <li>la reduction sur la degustation de vin por Elysion</li>
-    <li>5% de reduction sur le service client pour Gourmet</li>
-  </ul>
-
-</div>
-
-<div class="col-md-3">
-  <img src="assiets/image/im3.jpg" alt="">
-  <h1>
-    NOS MENUS
-  </h1>
-  <ul>
-    <li>Tournodo rossini</li>
-    <li>Bouillon Thai</li>
-    <li>Saumon a la Creme</li>
-    <li>veloute de patimoron</li>
-  </ul>
-
-</div>
-
-
-
-
-
-
-
-
-
+<footer>
+    <div class="container">
+        <div class="row g-4 text-center text-md-start">
+            <div class="col-lg-4 col-md-6">
+              <img src="assiets/image/im8.jpg" alt="Partenaires" class="footer-img">
+              <h5>NOS partenaires</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="footer-link">La Table Royale</a></li>
+                <li><a href="#" class="footer-link">Au Fin Gourmet</a></li>
+                <li><a href="#" class="footer-link">Elysion Luxury</a></li>
+                <li><a href="#" class="footer-link">La Grande Cuisine</a></li>
+                <li><a href="#" class="footer-link">Le Kactus Bio</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <img src="assiets/image/im6.jpg" alt="Offres" class="footer-img">
+              <h5>NOS OFFRES</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><span class="badge bg-warning text-dark">-20%</span> La Grande Cuisine</li>
+                <li class="mb-2"><span class="badge bg-warning text-dark">-15%</span> La Table Royale</li>
+                <li class="mb-2"><span class="badge bg-info">Dégustation</span> Offerte</li>
+                <li class="mb-2"><span class="badge bg-success">-5%</span> Service Client</li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <img src="assiets/image/im3.jpg" alt="Menus" class="footer-img">
+              <h5>NOS MENUS PHARES</h5>
+              <ul class="list-unstyled">
+                <li>Tournedos Rossini</li>
+                <li>Bouillon Thai Signature</li>
+                <li>Saumon à la Crème</li>
+                <li>Velouté de Potimarron</li>
+              </ul>
+            </div>
+        </div>
+        <hr class="mt-5 mb-4 border-secondary">
+        <div class="row text-center">
+            <p class="small mb-0 text-white-50">&copy; 2026 Maison Gourmande - Projet D-CLIK. Tous droits réservés.</p>
+        </div>
+    </div>
 </footer>
 
-
-
-
-
-
-
-
-    
-</body>
 <script src="assiets/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
